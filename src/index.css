@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tokens alinhados ao print */
+:root {
+  --bg-top:    #1e78b3; /* azul superior */
+  --bg-bottom: #186fa8; /* azul inferior */
+  --brand:     #1e78b3; /* usado em focos/bordas */
+  --brand-contrast: #ffffff;
+
+  --surface:   transparent; /* usamos gradiente no wrapper */
+  --card:      #17a2a8;     /* teal dos cards */
+  --on-surface:#ffffff;     /* textos em branco no hero */
+  --on-muted:  rgba(255,255,255,0.9);
+  --accent:    #9b59b6;     /* roxo do “+” (opcional) */
+
+  /* >>> Cor do texto do MENU <<< */
+  --menu-fg:   #17A2A8;
+
+  --section-h-xs: 240px; /* mobile */
+  --section-h-sm: 260px; /* >= sm */
+  --section-h-md: 260px; /* >= md */
+}
+
+@layer components {
+  .section-eq { min-height: var(--section-h-xs); display: flex; flex-direction: column; }
+  @screen sm { .section-eq { min-height: var(--section-h-sm); } }
+  @screen md { .section-eq { min-height: var(--section-h-md); } }
+}
+
+@layer utilities {
+  .bg-app {
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+  }
+  .tile {
+    background-color: var(--card);
+    color: #fff;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  }
+  .text-muted { color: var(--on-muted); }
+  .text-hero  { color: var(--on-surface); }
+  .text-onSurface { color: var(--on-surface); }
+  .bg-card    { background-color: var(--card); }
+  .bg-brand   { background-color: var(--brand); }
+  .text-onBrand { color: var(--brand-contrast); }
+
+  /* >>> Utilitário para a cor do texto do menu <<< */
+  .text-menu { color: var(--menu-fg); }
+}
+
+.container-app { @apply max-w-6xl mx-auto px-6; }
