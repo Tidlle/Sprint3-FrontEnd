@@ -45,7 +45,7 @@ export function Header() {
 
         <button
           ref={btnRef}
-          className="bg-[#17A2A8] rounded-lg border border-white/70 bg-white/90 text-white px-2.5 py-1.5"
+          className="bg-[#17A2A8] rounded-lg border border-white/70 text-white px-2.5 py-1.5"
           aria-label="Menu"
           aria-expanded={open}
           aria-controls="menu-popover"
@@ -67,9 +67,10 @@ export function Header() {
 
             <nav className="p-2 grid">
               <button onClick={()=>go('/')}           className="text-left px-3 py-2 rounded-lg hover:bg-gray-100 text-menu">🏠 Início</button>
-              <button onClick={()=>go('/contato')}    className="text-left px-3 py-2 rounded-lg hover:bg-gray-100 text-menu">➕ Marcar uma Consulta</button>
-              <button onClick={()=>go('/integrantes')}className="text-left px-3 py-2 rounded-lg hover:bg-gray-100 text-menu">📅 Ver Minhas Consultas</button>
-              <button onClick={()=>go('/contato')}    className="text-left px-3 py-2 rounded-lg hover:bg-gray-100 text-menu">💬 Chat HC</button>
+
+              <button onClick={()=>go('/consultas/marcar')} className="text-left px-3 py-2 rounded-lg hover:bg-gray-100 text-menu">➕ Marcar uma Consulta</button>
+              <button onClick={()=>go('/consultas')}        className="text-left px-3 py-2 rounded-lg hover:bg-gray-100 text-menu">📅 Ver Minhas Consultas</button>
+              <button onClick={()=>go('/chat')}    className="text-left px-3 py-2 rounded-lg hover:bg-gray-100 text-menu">💬 Chat HC</button>
               <button onClick={()=>go('/faq')}        className="text-left px-3 py-2 rounded-lg hover:bg-gray-100 text-menu">❓ Perguntas Frequentes</button>
               <button onClick={()=>go('/sobre')}      className="text-left px-3 py-2 rounded-lg hover:bg-gray-100 text-menu">👥 Quem Somos</button>
             </nav>
