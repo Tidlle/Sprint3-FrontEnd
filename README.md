@@ -4,6 +4,11 @@
 
 - Eduardo Martins - RM562259
 - Vitor Madrigrano - RM564191
+- Thiago Sposito - RM561694
+
+## Link para vídeo explicativo
+
+- https://www.youtube.com/watch?v=yNKjbU3l8yo
 
 ---
 
