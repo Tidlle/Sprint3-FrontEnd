@@ -6,6 +6,10 @@
 - Vitor Madrigrano - RM564191
 - Thiago Sposito - RM561694
 
+## Link do projeto
+
+- https://github.com/Tidlle/Sprint3-FrontEnd.git
+
 ## Link para vídeo explicativo
 
 - https://www.youtube.com/watch?v=yNKjbU3l8yo
